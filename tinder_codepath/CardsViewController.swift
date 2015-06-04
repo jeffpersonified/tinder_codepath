@@ -24,6 +24,13 @@ class CardsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        var destinationViewController = segue.destinationViewController as! ProfileViewController
+        
+        destinationViewController.ryanImage = self.ryanImageView.image
+        
+    }
     
     func convertValue(value: Float, r1Min: Float, r1Max: Float, r2Min: Float, r2Max: Float) -> Float {
         var ratio = (r2Max - r2Min) / (r1Max - r1Min)
@@ -34,6 +41,10 @@ class CardsViewController: UIViewController {
         return CGAffineTransformMakeRotation(rotation * CGFloat(M_PI / 180))
     }
     
+    @IBAction func didTapRyan(sender: AnyObject) {
+        performSegueWithIdentifier("ryanSegue", sender: nil)
+    }
+
     @IBAction func didPan(sender: AnyObject) {
         var point = panGestureRecognizer.locationInView(view)
         var velocity = panGestureRecognizer.velocityInView(view)

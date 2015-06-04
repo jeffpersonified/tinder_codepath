@@ -16,6 +16,7 @@
 		BBA0C30F1B201D97009703E8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA0C30E1B201D97009703E8 /* CardsViewController.swift */; };
 		BBA0C3121B201DAD009703E8 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA0C3101B201DAD009703E8 /* BaseTransition.swift */; };
 		BBA0C3131B201DAD009703E8 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA0C3111B201DAD009703E8 /* FadeTransition.swift */; };
+		BBC5CF251B202E87001BD1E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5CF241B202E87001BD1E1 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BBA0C30E1B201D97009703E8 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		BBA0C3101B201DAD009703E8 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		BBA0C3111B201DAD009703E8 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		BBC5CF241B202E87001BD1E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				BBA0C2F01B201C6F009703E8 /* ViewController.swift */,
 				BBA0C2F21B201C6F009703E8 /* Main.storyboard */,
 				BBA0C30E1B201D97009703E8 /* CardsViewController.swift */,
+				BBC5CF241B202E87001BD1E1 /* ProfileViewController.swift */,
 				BBA0C3101B201DAD009703E8 /* BaseTransition.swift */,
 				BBA0C3111B201DAD009703E8 /* FadeTransition.swift */,
 				BBA0C2F51B201C6F009703E8 /* Images.xcassets */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC5CF251B202E87001BD1E1 /* ProfileViewController.swift in Sources */,
 				BBA0C2F11B201C6F009703E8 /* ViewController.swift in Sources */,
 				BBA0C3131B201DAD009703E8 /* FadeTransition.swift in Sources */,
 				BBA0C3121B201DAD009703E8 /* BaseTransition.swift in Sources */,
@@ -423,6 +427,7 @@
 				BBA0C30A1B201C6F009703E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBA0C30B1B201C6F009703E8 /* Build configuration list for PBXNativeTarget "tinder_codepathTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				BBA0C30D1B201C6F009703E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

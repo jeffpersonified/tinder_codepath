@@ -26,6 +26,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xbl-Qz-qCG" appends="YES" id="cid-DT-Fz2"/>
+                                    <outletCollection property="gestureRecognizers" destination="hgF-Bn-H1Q" appends="YES" id="TUa-Je-Z0K"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -34,6 +35,7 @@
                     <connections>
                         <outlet property="panGestureRecognizer" destination="xbl-Qz-qCG" id="frS-Uz-IFZ"/>
                         <outlet property="ryanImageView" destination="t36-lI-a7M" id="ila-Rm-IMS"/>
+                        <segue destination="tNv-bu-pRZ" kind="modal" identifier="ryanSegue" id="No8-r9-1mh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,13 +44,56 @@
                         <action selector="didPan:" destination="BYZ-38-t0r" id="63P-4F-wuG"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="hgF-Bn-H1Q">
+                    <connections>
+                        <action selector="didTapRyan:" destination="BYZ-38-t0r" id="rcL-b6-0ui"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="162.66666666666666" y="366.36000000000001"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="k39-gX-mG7">
+            <objects>
+                <viewController id="tNv-bu-pRZ" customClass="ProfileViewController" customModule="tinder_codepath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZd-UW-Mzq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar2" id="UPc-gk-1xV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="action_buttons" id="x50-M2-vU4">
+                                <rect key="frame" x="33" y="98" width="254" height="291"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dVr-0b-Ilw">
+                                <rect key="frame" x="0.0" y="28" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didDismissRyan:" destination="tNv-bu-pRZ" eventType="touchUpInside" id="fIH-1z-rcy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ryanImageView" destination="x50-M2-vU4" id="meR-9n-2v8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTK-Fg-e3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="366"/>
         </scene>
     </scenes>
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
         <image name="ryan" width="224" height="257"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
